@@ -1,4 +1,4 @@
-# kdr-mef2c-cardiopharyngeal-mesoderm (Python/scanpy port)
+# kdr-mef2c-cardiopharyngeal-mesoderm-scanpy
 
 Single-cell RNA-seq pipeline studying vascular progenitors of the
 cardiopharyngeal mesoderm in *Kdr;Mef2cAHF-Cre* WT vs cKO mouse embryos
@@ -125,11 +125,13 @@ nextflow run main.nf -profile docker,apple_silicon
 
 ## Related projects
 
+- **[kdr-mef2c-cardiopharyngeal-mesoderm](https://github.com/drgideonobeng/kdr-mef2c-cardiopharyngeal-mesoderm)**
+  — the original R/Seurat implementation of this project. This
+  repository is a Python/scanpy port, built to mirror its architecture
+  and outputs 1:1.
 - **[tbx1-depleted-cardiopharyngeal-mesoderm](https://github.com/drgideonobeng/tbx1-depleted-cardiopharyngeal-mesoderm)**
   — sibling perturbation-arm project (Mesp1-Cre;Tbx1cKO, 4 samples,
   R/Seurat), sharing the same house style and phase structure.
-- The original R/Seurat implementation of this project, which this
-  repository ports to Python/scanpy.
 
 ## Status
 

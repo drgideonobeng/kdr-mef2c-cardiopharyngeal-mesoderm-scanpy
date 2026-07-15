@@ -1,13 +1,13 @@
 # Dockerfile — kdr-mef2c-scanpy
 # Reproducible Python environment for the Kdr;Mef2cAHF Phase 1 scanpy pipeline.
 #
-# docker buildx build --platform linux/amd64,linux/arm64 \
-#    -t gideondocker98/kdr-mef2c-scanpy:latest --push .
+# Build: docker build -t gideondocker98/kdr-mef2c-scanpy:latest .
+# Push : docker push gideondocker98/kdr-mef2c-scanpy:latest
 
 FROM python:3.11-slim
 
 LABEL maintainer="Gideon Obeng <obgideon@gmail.com>"
-LABEL org.opencontainers.image.source="https://github.com/drgideonobeng/kdr-mef2c-cardiopharyngeal-mesoderm"
+LABEL org.opencontainers.image.source="https://github.com/drgideonobeng/kdr-mef2c-cardiopharyngeal-mesoderm-scanpy"
 LABEL description="Kdr;Mef2cAHF Phase 1 scRNA-seq QC/clustering pipeline (scanpy)"
 
 # ── System dependencies ──────────────────────────────────────────────────
