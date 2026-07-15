@@ -1,0 +1,19 @@
+# params/samples.yml
+# Single source of truth for the Kdr;Mef2cAHF WT vs cKO study.
+# 2 samples: 1 WT pool + 1 cKO pool, tdTomato+/GFP+ FACS-sorted, E9.5-E10.
+#
+# `path` is relative to params.raw_dir (see phase1/nextflow.config), not to
+# the current working directory -- this keeps resolution correct regardless
+# of where `nextflow run` is launched from. If omitted, main.nf falls back
+# to "${raw_dir}/${id}/filtered_feature_bc_matrix".
+
+samples:
+  - id:        kdr_mef2c_wt_e10
+    genotype:  WT
+    path:      kdr_Mef2cAHF_wt_e10/filtered_feature_bc_matrix
+    note:      "tdTomato+/GFP+ FACS-sorted WT pool"
+
+  - id:        kdr_mef2c_cko_e10
+    genotype:  cKO
+    path:      kdr_Mef2cAHF_cko_e10/filtered_feature_bc_matrix
+    note:      "tdTomato+/GFP+ FACS-sorted cKO pool"

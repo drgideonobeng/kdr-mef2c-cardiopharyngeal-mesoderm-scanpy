@@ -1,0 +1,30 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ── Nextflow ──────────────────────────────────────────────────────────────
+work/
+.nextflow/
+.nextflow.log*
+*.nextflow.log*
+
+# ── Data & results ────────────────────────────────────────────────────────
+# Raw sequencing data and pipeline outputs are large, regeneratable, and
+# don't belong in version control. Only the code that produces them does.
+raw_data/
+results/
+
+# ── Docker ────────────────────────────────────────────────────────────────
+*.tar
+
+# ── OS / editor cruft ─────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ── Misc archives left over from development ─────────────────────────────
+*.zip
